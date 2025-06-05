@@ -22,27 +22,27 @@ public class HttpAiInvoke {
 
         // 设置请求体
         JSONObject requestBody = new JSONObject();
-        requestBody.put("model", "qwen-plus");
+        requestBody.set("model", "qwen-plus"); 
 
         JSONObject input = new JSONObject();
         JSONObject[] messages = new JSONObject[2];
 
         JSONObject systemMessage = new JSONObject();
-        systemMessage.put("role", "system");
-        systemMessage.put("content", "You are a helpful assistant.");
+        systemMessage.set("role", "system");
+        systemMessage.set("content", "You are a helpful assistant.");
         messages[0] = systemMessage;
 
         JSONObject userMessage = new JSONObject();
-        userMessage.put("role", "user");
-        userMessage.put("content", "你是谁？");
+        userMessage.set("role", "user");
+        userMessage.set("content", "你是谁？");
         messages[1] = userMessage;
 
-        input.put("messages", messages);
-        requestBody.put("input", input);
+        input.set("messages", messages);
+        requestBody.set("input", input);
 
         JSONObject parameters = new JSONObject();
-        parameters.put("result_format", "message");
-        requestBody.put("parameters", parameters);
+        parameters.set("result_format", "message");
+        requestBody.set("parameters", parameters);
 
         // 发送请求
         HttpResponse response = HttpRequest.post(url)
