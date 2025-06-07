@@ -50,6 +50,8 @@ public class LoveApp {
                         new MyLoggerAdvisor()
                         // 自定义推理增强advisor
 //                        new ReReadingAdvisor()
+                        // 自定义违禁词校验advisor
+//                        new ForbiddenWordsAdvisor()
                 )
                 .build();
     }
