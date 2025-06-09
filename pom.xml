@@ -65,6 +65,14 @@
             <version>1.0.0-M6.1</version>
         </dependency>
 
+        <!--ai读取markdown文档-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-markdown-document-reader</artifactId>
+            <version>1.0.0-M6</version>
+        </dependency>
+
+
         <!--支持结构化输出-->
         <dependency>
             <groupId>com.github.victools</groupId>
