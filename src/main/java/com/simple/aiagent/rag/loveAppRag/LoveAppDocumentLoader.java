@@ -28,6 +28,11 @@ public class LoveAppDocumentLoader {
     }
 
 
+    /**
+     * 加载多篇markdown文档作为知识库
+     *
+     * @return
+     */
     public List<Document> loadMarkdowns() {
         List<Document> allDocuments = new ArrayList<>();
         try {
