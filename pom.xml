@@ -65,6 +65,13 @@
             <version>1.0.0-M6.1</version>
         </dependency>
 
+        <!--spring ai mcp client-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-mcp-client-spring-boot-starter</artifactId>
+            <version>1.0.0-M6</version>
+        </dependency>
+
         <!--ai读取markdown文档-->
         <dependency>
             <groupId>org.springframework.ai</groupId>

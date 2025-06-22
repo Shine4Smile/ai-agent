@@ -3,6 +3,17 @@ spring:
     name: ai-agent
   profiles:
     active: local
+  # 指定mcp服务配置文件位置
+  ai:
+    mcp:
+      client:
+        sse:
+          connections:
+            server1:
+              url: http://localhost:8127
+#        stdio:
+#          servers-configuration: classpath:mcp-servers.json
+
 server:
   port: 8123
   servlet:

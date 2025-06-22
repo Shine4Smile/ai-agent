@@ -65,4 +65,11 @@ class LoveAppTest {
         Assertions.assertNotNull(answer);
     }
 
+    @Test
+    void testChatWithMcp() {
+        String chatId = UUID.randomUUID().toString();
+        String msg = "请搜索一些漫画风格的NBA球星图片";
+        String res = loveApp.doChatWithMcp(msg, chatId);
+        Assertions.assertNotNull(res);
+    }
 }
