@@ -1,0 +1,13 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: image-search-mcp-server
+        version: 0.0.1
+        type: SYNC
+        # stdio
+        stdio: true
+  # stdio\u6A21\u5F0F\u5173\u95EDweb\u4F7F\u9879\u76EE\u8F7B\u91CF
+  main:
+    web-application-type: none
+    banner-mode: off
